@@ -1,0 +1,3 @@
+module SeoLandingPages
+  VERSION = "0.0.1"
+end
