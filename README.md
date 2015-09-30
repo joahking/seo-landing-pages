@@ -1,6 +1,6 @@
 # SEO Landing Pages
 
-Create and manage your SEO landing pages with ease.
+Create and manage your SEO landing pages easily.
 
 ## Installation
 
