@@ -9,14 +9,14 @@ module SeoLandingPages
       extend ActiveSupport::Concern
 
       included do
-        helper_method :current_landing_page
+        helper_method :seo_current_landing_page
       end
 
       # Public: returns the current landing page.
       # The landing page is matched by the request path, check the method
       # seo_request_path for details on how to change the matching.
-      def current_landing_page
-        @current_landing_page ||= SeoLandingPages::Model.where(slug: seo_request_path).first
+      def seo_current_landing_page
+        @seo_current_landing_page ||= SeoLandingPages::Model.where(slug: seo_request_path).first
       end
 
       protected
