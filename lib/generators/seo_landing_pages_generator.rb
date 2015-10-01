@@ -8,6 +8,13 @@ class SeoLandingPagesGenerator < ActiveRecord::Generators::Base
     migration_template 'migration.rb', 'db/migrate/create_seo_landing_pages.rb'
   end
 
+  # Public: configures the application controller to include the Helpers module.
+  def controller
+    inject_into_class 'app/controllers/application_controller.rb', ApplicationController do
+      "  include SeoLandingPages::Controllers::Helpers\n\n"
+    end
+  end
+
   # Public: copies the active admin boilerplate code.
   def active_admin
     copy_file 'active_admin.rb', 'app/admin/seo_landing_pages.rb'
