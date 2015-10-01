@@ -27,8 +27,8 @@ module SeoLandingPages
       # pages are matched.
       #
       # Example: the request path is '/blog?search=XYZ', to handle all blog pages
-      # as the same landing page (e.g. '/blog') then change
-      # this method in your blogs_controller to remove everything after the '?'
+      # as the same landing page (e.g. '/blog') change this method in your
+      # blogs_controller to remove everything after the '?'
       #
       def seo_request_path
         request.path
