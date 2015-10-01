@@ -1,9 +1,14 @@
 Description:
-    Generates migration and code for the landing pages
+    Generates migration and boilerplate code for the landing pages
 
 Example:
     rails generate seo_landing_pages migration
 
-    This will create:
+      This will create:
         the migration to create the landing pages table
+
+    rails generate seo_landing_pages active_admin
+
+      This will create:
+        the boilerplate code to administer your landing pages with Active Admin
 
