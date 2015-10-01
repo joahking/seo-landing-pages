@@ -6,5 +6,7 @@ module SeoLandingPages
   module Controllers
     autoload :Helpers, 'seo_landing_pages/controllers/helpers'
   end
+
+  autoload :Helper, 'seo_landing_pages/helper'
 end
 

@@ -9,6 +9,7 @@ module SeoLandingPages
       extend ActiveSupport::Concern
 
       included do
+        helper SeoLandingPages::Helper
         helper_method :seo_current_landing_page
       end
 
