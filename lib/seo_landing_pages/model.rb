@@ -3,7 +3,8 @@ module SeoLandingPages
     # TODO make table_name configurable and use it
     self.table_name = 'seo_landing_pages'
 
-    validates :slug, presence: true, unique: true
+    # TODO test this
+    validates :slug, presence: true, uniqueness: true
   end
 end
 
