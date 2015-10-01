@@ -1,5 +1,6 @@
-require "seo_landing_pages/version"
+require 'seo_landing_pages/version'
 
 module SeoLandingPages
-  # Your code goes here...
+  autoload :Model, 'seo_landing_pages/model'
 end
+
