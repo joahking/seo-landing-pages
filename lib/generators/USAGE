@@ -1,0 +1,9 @@
+Description:
+    Generates migration and code for the landing pages
+
+Example:
+    rails generate seo_landing_pages migration
+
+    This will create:
+        the migration to create the landing pages table
+
