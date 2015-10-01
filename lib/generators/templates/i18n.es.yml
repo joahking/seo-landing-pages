@@ -1,0 +1,10 @@
+es:
+  activerecord:
+    models:
+      seo_landing_pages/model:
+        one: 'Página SEO'
+        other: 'Páginas SEO'
+    attributes:
+      seo_landing_pages/model:
+        slug: 'URL'
+

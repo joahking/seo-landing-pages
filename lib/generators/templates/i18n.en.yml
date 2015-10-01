@@ -1,0 +1,7 @@
+en:
+  activerecord:
+    models:
+      seo_landing_pages/model:
+        one: 'SEO Landing Page'
+        other: 'SEO Landing Pages'
+

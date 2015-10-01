@@ -13,6 +13,13 @@ class SeoLandingPagesGenerator < ActiveRecord::Generators::Base
     copy_file 'active_admin.rb', 'app/admin/seo_landing_pages.rb'
   end
 
+  # Public: copies the i18n files.
+  def i18n
+    %w(en es).each do |locale|
+      copy_file "i18n.#{ locale }.yml", "config/locales/seo_landing_pages.#{ locale }.yml"
+    end
+  end
+
   # Public: adds an admin route to the router.
   def route
     #TODO
