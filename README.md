@@ -80,6 +80,25 @@ tag for you to concatenate them or so.
 = seo_landing_page_keywords
 ```
 
+### Internationalization support
+
+For internationalization, instead of writing plain text in the title, description
+and keywords write i18n keys, e.g. a landing page for your home page:
+
+    > SeoLandingPages::Model.create! slug: '/', title:       'title_home_page',
+                                                description: 'description_home_page',
+                                                keywords:    'keywords_home_page'
+
+Create the translations in your locale files. Then use the view helpers like this:
+
+```ruby
+= seo_landing_page_title_tag i18n: true
+= seo_landing_page_description_tag i18n: true
+= seo_landing_page_keywords_tag i18n: true
+```
+
+Now your pages have the HTML elements localized.
+
 ### Admin section
 
 There's an Active Admin view provided, to get it run:
@@ -93,13 +112,10 @@ traffic increasing for your website.
 
 ## TODO
 
-- write another CRUD admin section for those not using Active Admin
+- write another CRUD admin section for those not using Active Admin, or accept
+a Pull Request having it ;-)
+- fix the TODOs in the code
 - write tests
-
-## Credits
-
-This gem was developed in the [Hack Week at XING Barcelona](http://www.xing.com), Big
-thanks to XING for providing the time to see ideas being realized.
 
 ## Contributing
 
@@ -108,4 +124,9 @@ thanks to XING for providing the time to see ideas being realized.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## Credits
+
+This gem was developed in the [Hack Week at XING Barcelona](http://www.xing.com), Big
+thanks to XING for providing the time to see ideas being realized.
 
