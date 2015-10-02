@@ -127,6 +127,6 @@ a Pull Request having it ;-)
 
 ## Credits
 
-This gem was developed in the [Hack Week at XING Barcelona](http://www.xing.com), Big
-thanks to XING for providing the time to see ideas being realized.
+This gem was developed in the [Hack Week at XING Barcelona](https://twitter.com/hashtag/hackweekxing),
+Big thanks to XING for providing the time to see ideas being realized.
 
