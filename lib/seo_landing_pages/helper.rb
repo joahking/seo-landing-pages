@@ -8,7 +8,7 @@ module SeoLandingPages
     # If the landing page title is empty it returns nothing.
     def seo_landing_page_title_tag(i18n: false)
       title = seo_landing_page_title i18n: i18n
-      if title
+      if title.present?
         "<title>#{ title }</title>".html_safe
       end
     end
@@ -19,7 +19,7 @@ module SeoLandingPages
     def seo_landing_page_title(i18n: false)
       if seo_current_landing_page
         title = seo_current_landing_page.title
-        if title
+        if title.present?
           i18n ? t(title) : title
         end
       end
@@ -31,7 +31,7 @@ module SeoLandingPages
     # If the landing page description is empty it returns nothing.
     def seo_landing_page_description_tag(i18n: false)
       description = seo_landing_page_description i18n: i18n
-      if description
+      if description.present?
         "<meta name='description' content='#{ description }'/>".html_safe
       end
     end
@@ -43,7 +43,7 @@ module SeoLandingPages
     def seo_landing_page_description(i18n: false)
       if seo_current_landing_page
         description = seo_current_landing_page.description
-        if description
+        if description.present?
           i18n ? t(description) : description
         end
       end
@@ -55,7 +55,7 @@ module SeoLandingPages
     # If the landing page keywords is empty it returns nothing.
     def seo_landing_page_keywords_tag(i18n: false)
       keywords = seo_landing_page_keywords i18n: i18n
-      if keywords
+      if keywords.present?
         "<meta name='keywords' content='#{ keywords }'/>".html_safe
       end
     end
@@ -67,7 +67,7 @@ module SeoLandingPages
     def seo_landing_page_keywords(i18n: false)
       if seo_current_landing_page
         keywords = seo_current_landing_page.keywords
-        if keywords
+        if keywords.present?
           i18n ? t(keywords) : keywords
         end
       end
