@@ -6,7 +6,7 @@ class CreateSeoLandingPages < ActiveRecord::Migration
       t.string :description
       t.string :keywords
 
-      t.timestamps
+      t.timestamps null: false
     end
     add_index :seo_landing_pages, :slug
   end
